@@ -1,11 +1,11 @@
 import React from "react";
 
 interface IMenuItem {
-  name: string;
+  title: string;
 }
 
-const MenuItem: React.FC<IMenuItem> = ({ name }) => {
-  return <li className="hover:text-sky-950 cursor-pointer">{name}</li>;
+const MenuItem: React.FC<IMenuItem> = ({ title }) => {
+  return <li className="hover:scale-110 cursor-pointer">{title}</li>;
 };
 
 export default MenuItem;
