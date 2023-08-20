@@ -55,7 +55,7 @@ const cards = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full gap-y-14">
+    <div className="flex flex-col w-full gap-y-14 relative">
       <Banner />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-16">
         {cards.map((card) => (

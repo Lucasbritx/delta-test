@@ -5,7 +5,11 @@ interface IMenuItem {
 }
 
 const MenuItem: React.FC<IMenuItem> = ({ title }) => {
-  return <li className="hover:scale-110 cursor-pointer">{title}</li>;
+  return (
+    <li className="border-b-2 sm:border-none hover:scale-110 cursor-pointer">
+      {title}
+    </li>
+  );
 };
 
 export default MenuItem;
