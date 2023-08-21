@@ -23,12 +23,13 @@ const getSlide = (image: string, bgColor: string) => {
           style={{ backgroundColor: bgColor }}
         >
           <img
+            loading="lazy"
             src={deltaWhiteLogo}
             className="absolute right-0 opacity-10 h-full"
           />
         </div>
       </div>
-      <img src={image} className="w-full h-full" />
+      <img loading="lazy" src={image} className="w-full h-full" />
     </div>
   );
 };

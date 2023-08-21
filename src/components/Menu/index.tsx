@@ -17,9 +17,10 @@ const Menu: React.FC<IMenu> = ({ show, setShow }) => {
   return (
     <>
       {show && (
-        <div className="flex justify-center items-center sm:hidden bg-white z-50 fixed inset-0">
+        <div className="flex justify-center items-center sm:hidden bg-white z-50 fixed h-screen inset-0">
           <button onClick={() => setShow(!show)}>
             <img
+              loading="lazy"
               src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"
               alt="Fechar"
               className="absolute top-4 right-4"
