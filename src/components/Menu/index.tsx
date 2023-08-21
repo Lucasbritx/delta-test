@@ -17,7 +17,7 @@ const Menu: React.FC<IMenu> = ({ show, setShow }) => {
   return (
     <>
       {show && (
-        <div className="block sm:hidden bg-white z-50 absolute inset-0">
+        <div className="flex justify-center items-center sm:hidden bg-white z-50 fixed inset-0">
           <button onClick={() => setShow(!show)}>
             <img
               src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"
@@ -25,7 +25,7 @@ const Menu: React.FC<IMenu> = ({ show, setShow }) => {
               className="absolute top-4 right-4"
             />
           </button>
-          <ul className="flex flex-col gap-y-2 items-center">
+          <ul className="flex flex-col gap-y-4 items-center">
             {menuItems.map((item) => (
               <MenuItem key={item} title={item} />
             ))}
