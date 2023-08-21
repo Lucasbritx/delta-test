@@ -3,16 +3,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "*",
-    element: <div>Página não encontrada!</div>,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "*",
+      element: <div>Página não encontrada!</div>,
+    },
+  ],
+  { basename: "/delta-test" }
+);
 
 function App() {
   return (

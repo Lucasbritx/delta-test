@@ -16,7 +16,7 @@ interface IMenu {
 const Menu: React.FC<IMenu> = ({ show, setShow }) => {
   return (
     <>
-      {!show && (
+      {show && (
         <div className="block sm:hidden bg-white z-50 absolute inset-0">
           <button onClick={() => setShow(!show)}>
             <img
